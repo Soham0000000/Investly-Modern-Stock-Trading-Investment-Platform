@@ -1,0 +1,54 @@
+.apps-page .title {
+  margin-top: 0;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+}
+
+.app-link {
+  position: relative;
+  display: grid;
+  min-height: 108px;
+  align-content: start;
+  gap: 10px;
+  padding: 18px;
+  color: #30383c;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #e1e6e8;
+  border-radius: 4px;
+  transition: border-color 140ms ease, transform 140ms ease;
+}
+
+.app-link:hover {
+  border-color: #87a89a;
+  transform: translateY(-2px);
+}
+
+.app-link-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.app-link-description {
+  max-width: 28ch;
+  color: #718087;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.app-link-arrow {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #368b59;
+  font-size: 1.1rem;
+}
+
+.app-link:focus-visible {
+  outline: 2px solid #368b59;
+  outline-offset: 2px;
+}

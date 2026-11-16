@@ -1,0 +1,324 @@
+.pricing-page {
+  width: 100%;
+}
+
+.pricing-hero {
+  padding: 72px 24px 62px;
+  color: #424242;
+}
+
+.pricing-hero__title {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 500;
+  color: #424242;
+}
+
+.pricing-hero__subtitle {
+  margin-bottom: 48px !important;
+  color: #9b9b9b;
+  font-size: 1.2rem;
+}
+
+.pricing-hero .row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+
+.pricing-hero .row > .col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-card {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 28px;
+}
+
+.pricing-card__image {
+  width: 150px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  transition: transform 180ms ease;
+}
+
+.pricing-card:hover .pricing-card__image {
+  transform: translateY(-5px);
+}
+
+.pricing-card h2 {
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.pricing-card p {
+  max-width: 340px;
+  margin: 0 auto;
+  color: #666;
+  line-height: 1.75;
+}
+
+.charges-section {
+  padding: 30px 24px 72px;
+}
+
+.charges-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px;
+  margin: 0 auto 28px;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.charges-tab {
+  min-width: 112px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #387ed1;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.charges-tab:hover {
+  background: #eef5fd;
+}
+
+.charges-tab.active {
+  color: #fff;
+  background: #387ed1;
+  box-shadow: 0 4px 12px rgba(56, 126, 209, 0.22);
+}
+
+.charges-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e3e6ea;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(35, 45, 57, 0.06);
+  scrollbar-width: thin;
+}
+
+.charges-table {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #444;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.charges-table th,
+.charges-table td {
+  padding: 16px 20px;
+  border-right: 1px solid #eceef1;
+  border-bottom: 1px solid #eceef1;
+  vertical-align: middle;
+}
+
+.charges-table tr > :last-child {
+  border-right: 0;
+}
+
+.charges-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.charges-table thead th {
+  color: #444;
+  background: #f5f7fa;
+  font-weight: 600;
+  text-align: center;
+}
+
+.charges-table tbody th {
+  min-width: 190px;
+  color: #555;
+  font-weight: 500;
+}
+
+.charges-table tbody td {
+  min-width: 240px;
+  line-height: 1.55;
+}
+
+.charges-table tbody tr {
+  transition: background-color 150ms ease;
+}
+
+.charges-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.charges-table tbody tr:hover {
+  background: #f2f7fd;
+}
+
+.charges-table .charges-table__label-cell {
+  border-right-color: #e2e6ea;
+  font-weight: 600;
+}
+
+.charges-note {
+  margin-top: 18px;
+  color: #777;
+  font-size: 0.82rem;
+}
+
+.account-charges-section {
+  padding: 48px 24px 72px;
+}
+
+.calculator-link {
+  margin-bottom: 52px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.calculator-link a {
+  color: #387ed1;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.calculator-link a:hover {
+  text-decoration: underline;
+}
+
+.account-charges-title {
+  margin-bottom: 24px;
+  color: #424242;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.account-charges-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e3e6ea;
+  border-radius: 8px;
+}
+
+.account-charges-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #555;
+}
+
+.account-charges-table th,
+.account-charges-table td {
+  padding: 16px 22px;
+  border-bottom: 1px solid #eceef1;
+  text-align: left;
+}
+
+.account-charges-table th {
+  color: #444;
+  background: #f5f7fa;
+  font-weight: 500;
+}
+
+.account-charges-table th:last-child,
+.account-charges-table td:last-child {
+  text-align: right;
+}
+
+.account-charges-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.account-charges-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.free-charge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: 500;
+}
+.first-free{
+  padding: 2px 12px;
+  border-left:4px solid #387ed1;
+  margin-bottom: 12px;
+}
+.first-free:hover{
+  width: 15%;
+ background: #a3aab2;
+}
+
+@media (max-width: 768px) {
+  .pricing-hero {
+    padding: 48px 16px 36px;
+  }
+
+  .pricing-hero__subtitle {
+    margin-bottom: 30px !important;
+    font-size: 1rem;
+  }
+
+  .pricing-card {
+    margin-bottom: 36px;
+    padding: 0;
+  }
+
+  .charges-section {
+    padding: 20px 12px 48px;
+  }
+
+  .charges-tabs {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .charges-tab {
+    min-width: max-content;
+  }
+
+  .charges-table th,
+  .charges-table td {
+    padding: 14px 16px;
+  }
+
+  .account-charges-section {
+    padding: 36px 16px 48px;
+  }
+
+  .calculator-link {
+    margin-bottom: 36px;
+    font-size: 0.9rem;
+  }
+
+  .account-charges-title {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+  }
+
+  .account-charges-table th,
+  .account-charges-table td {
+    padding: 14px 18px;
+  }
+}
